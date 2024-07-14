@@ -1,4 +1,4 @@
-function displayCryptoDetails(qrId, walletAddress, networkType, showMemo) {
+function displayCryptoDetails(qrId, walletAddress, networkType, showMemo, showNot) {
     let head = document.getElementById('header');
     head.style.opacity = '0.6';
 
@@ -14,7 +14,16 @@ function displayCryptoDetails(qrId, walletAddress, networkType, showMemo) {
         memoAdr.classList.add('d-none');
     }
     memoAdr.textContent = 'MEMO 524775475';
-
+    
+    // Скрытие или показ блока notAdres
+    let notAddr = document.getElementById('notAdres');
+    if (showNot) {
+        notAddr.classList.remove('d-none');
+    } else {
+        notAddr.classList.add('d-none');
+    }
+    notAddr.textContent = 'MEMO: 109209210';
+    
     // Показать QR-код и обновить детали
     let walletAderss = document.getElementById('walletAddress');
     let walletNet = document.getElementById('walletNet');
@@ -33,6 +42,7 @@ function displayCryptoDetails(qrId, walletAddress, networkType, showMemo) {
     walletAderss.textContent = walletAddress;
     walletNet.textContent = networkType;
 }
+
 function btcButton() {
     displayCryptoDetails('BTCQR', '1Ge5uKm6BzXQp1R9zWh6AymQYNknWMofRw', 'BTC (BITCOIN)', false);
 }
@@ -48,7 +58,12 @@ function usdtButton() {
 function bnbButton() {
     displayCryptoDetails('BNBQR', 'bnb165q9dz39mqh789zuuuqwkv22plut6f4nzy9jc9', 'BNB (BEP2)', true);
 }
-
+function notButton() {
+    displayCryptoDetails('NOTQR', 'EQD5mxRgCuRNLxKxeOjG6r14iSroLF5FtomPnet-sgP5xNJb', 'TON (Tonction)', false, true);
+}
+function solButton() {
+    displayCryptoDetails('SOLQR', '49Rj5mJW2Z1tEFgbHUvsrC3hE7rQL4q4GEa5CkMoBmAk', 'SOL (Solana)', false);
+}
 
 
 
