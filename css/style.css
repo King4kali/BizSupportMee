@@ -61,7 +61,8 @@ button{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 70vh;
+    max-width: 1000px;
+    max-height: 900px;
     background: #ffffff;
     border-radius: 50px;
     opacity: 0;
@@ -78,7 +79,7 @@ button{
 .qr-code{
     width: 50%;
     margin: 0 auto;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 .qr-code svg{
     width: 100%;
@@ -91,20 +92,19 @@ button{
     line-height: 1.5;
     width: 90%;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 0%;
 
     word-wrap: break-word;
 }
 .memo{
     margin: 0 auto;
-    margin-top: 1%;
+    margin-top: 5%;
     width: 90%;
     background: #000;
     color: #fff;
     padding: 5px;
     border-radius: 5px;
     text-align: center;
-    
 }
 .info_h3 {
     text-align: center;
@@ -117,22 +117,19 @@ button{
 }
 
 .copy_btn {
-    width: 70%;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
     padding: 20px 30px;
     border: none;
     border-radius: 20px;
     background-color: black;
     color: white;
+    margin-top: 5%;
 }
 
 .crypto_wallet_net {
     text-align: center;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 5%;
     background: #000;
     color: #fff;
     padding: 5px;
