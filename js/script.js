@@ -59,7 +59,7 @@ function bnbButton() {
     displayCryptoDetails('BNBQR', 'bnb165q9dz39mqh789zuuuqwkv22plut6f4nzy9jc9', 'BNB (BEP2)', true);
 }
 function notButton() {
-    displayCryptoDetails('NOTQR', 'EQD5mxRgCuRNLxKxeOjG6r14iSroLF5FtomPnet-sgP5xNJb', 'TON (Tonction)', false, true);
+    displayCryptoDetails('NOTQR', 'EQD5mxRgCuRNLxKxeOjG6r14iSroLF5FtomPnet-sgP5xNJb', 'NOT (TON)', false, true);
 }
 function solButton() {
     displayCryptoDetails('SOLQR', '49Rj5mJW2Z1tEFgbHUvsrC3hE7rQL4q4GEa5CkMoBmAk', 'SOL (Solana)', false);
