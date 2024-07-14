@@ -1,3 +1,4 @@
+print('123')
 function displayCryptoDetails(qrId, walletAddress, networkType, showMemo) {
     let head = document.getElementById('header');
     head.style.opacity = '0.6';
