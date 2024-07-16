@@ -24,13 +24,16 @@ button{
     position: relative;
 }
 .h1{
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     color: #fff;
     padding-top: 20%;
 }
 .h1 img{
-    width: 100px;
+    width: 70px;
+    margin-left: 20px;
 }
 .buttons{
     position: absolute;
